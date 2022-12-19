@@ -1,0 +1,273 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	
+}
+body{
+	margin: 0%;
+	/* font-family: 'Roboto', sans-serif;*/
+}
+.row{
+	width: 100%;
+}
+/* header-section-start */
+header{
+	background-color: aqua;
+	text-align: center;
+	padding: 10px;
+}
+header::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.nav-icon{
+	color: white;
+	font-size: 5rem;
+	line-height: 100px;
+	padding: 20px;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+.nav-contact{
+	display: block;
+}
+.nav-contact a{
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 40px;
+	background-color:teal;
+	color: white;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+.nav-contact a:hover{
+	background-color: rgb(78, 134, 134);
+}
+/* header-section-end */
+[class*="col-"]{
+	width: 100%;
+}
+[class*="col-"]{
+	float: left;
+	padding: 10px;
+}
+/* vaner section start */
+#vaner{
+	background-image: url(restarunt.jpg/my\ restaurant.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.content{
+	text-align: center;
+	padding: 50px 10px;
+}
+.content h1{
+	background-color: yellow;
+	width: 100%;
+	margin:20px auto;
+	font-size: 4rem;
+	font-family: 'Satisfy', cursive;
+	border-radius: 10px;
+	padding: 10px;
+}
+.content p{
+	background-color: darkgoldenrod;
+	width: 330px;
+	line-height: 40px;
+	margin:10px auto;
+	font-size: 2rem;
+	padding: 15px;
+	border-radius: 5px;
+}
+.btn{
+	background-color: green;
+	font-size: 20px;
+	border: none;
+	line-height: 40px;
+	padding: 10px;
+	text-transform: uppercase;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+/* vaner section end */
+/* about us section start */
+#about-us{
+	padding: 1%;
+
+}
+.about-us-content{
+	text-align: center;
+	padding: 5%;
+}
+.about-us-content h3{
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.about-us-content p{
+	font-size: 1rem;
+	margin-bottom: 20px;
+}
+/* about us section end */
+/* food manu section start */
+#food-menu{
+	padding: 1%;
+}
+.card{
+	transition: 0.3s;
+}
+.card-body{
+	text-align: center;
+	background-color: rgb(116, 91, 91);
+	
+}
+.card-body img{
+	width: 100%;
+	height: 450px;
+	display: block;
+}
+.menu-ditels{
+	background-color: rgb(116, 91, 91);
+}
+.menu-ditels h3{
+	text-transform: uppercase;
+	background-color: green;
+	padding: 10px;
+	font-size: 1.5rem;
+}
+.menu-ditels p{
+	font-size: 1rem;
+	font-weight: bolder;
+	color: white;
+	padding: 10px;
+	
+}
+.card:hover{
+	transform: scale(0.9);
+}
+#food-menu::after{
+	content: "";
+	display:table;
+	clear: both;
+}
+
+/* food manu section end */
+/* contact section start */
+#contact{
+	padding: 2.5%;
+	background-color: rgb(98, 138, 202);
+	color: rgb(5, 5, 5);
+} 
+.map{
+	width: 100%;
+	height: 250px;
+}
+.contact-details{
+	text-align: center;
+}
+.contact-details h5{
+	font-size: 20px;
+}
+.contact-details p{
+	font-size: 15px;
+}
+#contact::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+/* contact section end*/
+/* footer start hear */
+footer{
+	padding: 1%;
+	background-color: rgb(5, 5, 114);
+	color: white;
+}
+sup{
+	color:goldenrod;
+	font-size: 20px;
+}
+
+footer p{
+	font-size: 20px;
+	text-align:center;
+	line-height: 50px;
+}
+.social-menu{
+	text-align: center;
+}
+.icon-style{
+	color: white;
+	text-align: center;
+	width: 35px;
+	height: 35px;
+	border: 1px solid;
+	border-radius: 50%;
+	padding: 7px;
+	margin: 10px;
+	transition: all 0.3s;
+}
+.icon-style:hover{
+	background-color: red;
+}
+footer::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+/* footer end hear */
+@media only screen and (min-width: 768px) {
+	.nav-icon{
+		
+		font-size: 3rem;
+		
+	}
+	#vaner{
+		max-width: 100%;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav-contact a{
+		display: inline;
+		background-color: transparent;
+		font-size: 1.3rem;
+		padding: 10px;
+		float: right;
+		margin-right: 17px;
+		
+	}
+	.nav-icon{
+		float: left;
+	}
+	/* footer start */
+		footer p{
+			text-align: left;
+		}
+		.social-menu{
+			text-align: right;
+		}
+	/* footer end */
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+  }
